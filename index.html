@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>SADIQ CHEAP DATA</title>
+   <style>
+      body {
+         background-image: url("cover.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 500px;
+      }
+      legend {
+         font-size: 16px;
+         background: lightyellow;
+         border: 2px solid black;
+         padding: 3px;
+         color: blue;
+         border-radius: 10px;
+      }
+      fieldset {
+         border: 2px solid black;
+         border-radius: 10px;
+      }
+      #site {
+         font-size: 20px;
+         border: 2px solid white;
+         padding: 5px;
+         color: white;
+         background-color: black;
+      }
+      #submit {
+         color: white;
+         background-color: black;
+         border: 2px solid white;
+         font-size: 20px;
+         border-radius: 10px;
+         padding: 5px;
+      }
+      input {
+         font-size: 20px;
+         border-radius: 5px;
+      }
+      #submit:hover {
+         background-color: lightgreen;
+         color: black;
+      }
+   </style>
+</head>
+<body>
+   <p align="center">
+      <b id="site">Sadiq cheap data</b>
+   </p>
+   <br>
+   <form action="https://formspree.io/f/mknlqywp" method="POST">
+      <fieldset>
+         <legend>
+            <b>Enter payment details here</b>
+         </legend>
+         <br><br>
+         <div id="details" align="center">
+            <label for="fname">
+               <b>Network name</b>
+            </label>
+            <br>
+            <input type="text" name="NetworkName" id="fname">
+            <br><br>
+            <label for="contact">
+               <b>Phone number</b>
+            </label>
+            <br>
+            <input type="number" id="contact" name="PhoneNumber">
+            <br><br>
+            <label for="fname">
+               <b>Enter price</b>
+            </label>
+            <br>
+            <input type="text" id="price" name="price">
+            <br><br>
+            <label for="sname">
+               <b>Personal Account name</b>
+            </label>
+            <br>
+            <input type="text" name="account name" id="sname">
+            <br><br>
+            <button type="submit" id="submit">Submit</button>
+         </div>
+      </fieldset>
+   </form>
+   <script>
+      // JavaScript to redirect to success.html after form submission
+      document.querySelector('form').addEventListener('submit', function () {
+         window.location.href = 'success.html';
+      });
+   </script>
+</body>
+</html>
